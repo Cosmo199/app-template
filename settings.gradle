@@ -1,0 +1,2 @@
+rootProject.name='ploichao'
+include ':app'

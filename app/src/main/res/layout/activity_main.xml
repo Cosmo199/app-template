@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#8F8B8B"
+            android:id="@+id/image_top"
+            />
+
+        <TextView
+            android:layout_below="@id/image_top"
+            android:layout_marginTop="40dp"
+            android:id="@+id/topic"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#0C0C0C"
+            android:text="Category: เครื่องใช้ไฟฟ้า" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/topic"
+            android:id="@+id/listCategory"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_below="@id/listCategory"
+            android:layout_marginTop="40dp"
+            android:id="@+id/text_sub"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#0C0C0C"
+            android:text="Category: เสื้อผ้า-ชุดออกงาน" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/text_sub"
+            android:id="@+id/listCategory2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+</ScrollView>
